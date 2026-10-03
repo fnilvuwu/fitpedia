@@ -12,8 +12,11 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-fit-line bg-fit-black/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center gap-2 px-4 py-3">
-        <Link to="/" className="mr-4 font-display text-2xl tracking-wide text-fit-yellow">
-          FITPEDIA <span className="text-white">GUIDE</span>
+        <Link to="/" className="mr-4 flex items-center gap-2 font-display text-2xl tracking-wide text-fit-yellow">
+          <img src="/favicon.ico" alt="Fitpedia" className="h-7 w-7 rounded" />
+          <span>
+            FITPEDIA <span className="text-white">GUIDE</span>
+          </span>
         </Link>
         {links.map((l) => (
           <Link
