@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&family=Inter:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-fit-black: #0a0a0a;
+  --color-fit-card: #212121;
+  --color-fit-window: #2d2d39;
+  --color-fit-nav: #333333;
+  --color-fit-grey: #828282;
+  --color-fit-text: #c8c8c8;
+  --color-fit-line: #2d303a;
+  --color-fit-yellow: #f2c94c;
+  --color-fit-yellow-soft: #f7cb4d;
+
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Roboto', 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-fit-black);
+  color: #fff;
+  font-family: var(--font-body);
+}
+
+/* Thin scrollbars for code blocks */
+pre::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+pre::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
